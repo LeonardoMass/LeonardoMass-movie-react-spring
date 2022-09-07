@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
-  --color-primary: #eb6d33;
+  --color-primary: rgba(14, 180, 221, 0.867);
 }
 
 * {
