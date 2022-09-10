@@ -32,7 +32,7 @@ function Listing() {
 
             </div>
 
-            <MovieCard></MovieCard>
+           
         </>
     );
 }

@@ -6,7 +6,7 @@ import './styles.css';
 
 function MovieStars() {
     return (
-        <div className="dsmovie-stars-container">
+        <div className="movie-stars-container">
             <StarFull />
             <StarFull />
             <StarFull />
