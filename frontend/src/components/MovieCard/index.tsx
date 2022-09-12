@@ -13,7 +13,7 @@ function MovieCard() {
 
 
     return (
-        <div>
+        <div className="movie-listing-space">
             <img className="movie-movie-card-image" src={movie.image} alt={movie.title} />
             <div className="movie-card-bottom-container">
                 <h3>{movie.title}</h3>

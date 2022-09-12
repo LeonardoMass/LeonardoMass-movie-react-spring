@@ -25,7 +25,7 @@
 .movie-movie-card-image {
     width: 100%;
     border-radius: 8px;
-    padding: 0 10px 0 20px;
+    padding: 0px 10px 0px 10px;
 }
 
 .movie-card-bottom-container {
@@ -60,6 +60,17 @@
     border: none;
     
 
+}
+
+.movie-listing-space{
+
+    width: 90%;
+}
+
+.group {
+    margin: 0 70px 0 70px;
+    
+    justify-content: center;
 }
 
 .movie-btn:any-link{
