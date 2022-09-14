@@ -25,7 +25,7 @@
 .movie-movie-card-image {
     width: 90%;
     border-radius: 8px;
-    padding: 0px 10px 0px 10px;
+    margin-left: 20px;
 }
 
 .movie-card-bottom-container {
