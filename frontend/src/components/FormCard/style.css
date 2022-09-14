@@ -23,7 +23,7 @@
 }
 
 .movie-movie-card-image {
-    width: 100%;
+    width: 90%;
     border-radius: 8px;
     padding: 0px 10px 0px 10px;
 }
@@ -70,7 +70,7 @@
 .group {
     margin: 0 70px 0 70px;
     
-    justify-content: center;
+
 }
 
 .movie-btn:any-link{

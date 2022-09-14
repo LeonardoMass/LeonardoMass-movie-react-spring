@@ -27,10 +27,12 @@
     align-items: center;
     border: 1px solid var(--color-primary);
     cursor: pointer;
+    
 }
 
+
 .movie-pagination-button svg {
-    filter: brightness(0) saturate(100%) invert(26%) sepia(19%) saturate(7395%) hue-rotate(234deg) brightness(89%) contrast(92%);
+    filter: invert(38%) sepia(100%) saturate(1969%) hue-rotate(166deg) brightness(102%) contrast(103%);
 }
 
 .movie-pagination-button:disabled {
