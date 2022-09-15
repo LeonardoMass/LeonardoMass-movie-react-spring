@@ -7,6 +7,7 @@ import { useState, useEffect } from "react";
 
 function Listing() {
 
+    const [sort, setSort] = useState("count,desc");
     const [pageNumber, setPageNumber] = useState(0);
     const [page, setPage] = useState<MoviePage>({
         content: [],
@@ -23,21 +24,27 @@ function Listing() {
 
 
     useEffect(() => {
-        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=count,desc`).then(response => {
+        axios.get(`${BASE_URL}/movies?size=12&page=${pageNumber}&sort=${sort}`).then(response => {
             const data = response.data as MoviePage;
             setPage(data);
 
         })
-    }, [pageNumber]);
+    }, [pageNumber,sort]);
 
     const pageChange = (newPageNumber : number) => {
         setPageNumber(newPageNumber);
     }
 
+    const sortChange = (newSort : string) => {
+        console.log(newSort)
+        setSort(newSort);
+    }
+
+        
     return (
         <>
 
-            <Pagination page={page} changePage={pageChange} />
+            <Pagination page={page} changePage={pageChange} changeSort={sortChange}  />
 
             <div className="conteiner group">
                 <div className="row">

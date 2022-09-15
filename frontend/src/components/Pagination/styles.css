@@ -3,9 +3,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 80px;
+    
+    
 }
 
 .movie-pagination-box {
+    margin-left: 100px;
     width: 180px;
     display: flex;
     justify-content: space-between;
@@ -14,7 +18,7 @@
 
 .movie-pagination-box form {
     width: 100%;
-    display: flex;
+    
 }
 
 .movie-pagination-button {
@@ -48,8 +52,21 @@
     margin: 0;
     font-size: 12px;
     color: var(--color-primary);
+    
+}
+.sort-pagination-group-select{
+    padding: 0 5px 0 0;
 }
 
+.sort-pagination-group{
+
+    position: relative;
+    left: 205%;
+    justify-content: space-between;
+    
+   
+   
+}
 .movie-flip-horizontal {
     transform: rotate(180deg);
 }
