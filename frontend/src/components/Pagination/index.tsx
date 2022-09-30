@@ -2,7 +2,7 @@
 import { ReactComponent as Arrow } from 'assets/img/arrow.svg';
 import { MoviePage } from 'types/movie';
 import './styles.css';
-import Select from 'react-select'
+
 type Prop = {
     page: MoviePage;
     changePage: Function;
@@ -27,16 +27,17 @@ function Pagination({ page, changePage, changeSort }: Prop) {
                 </button>
             </div>
 
-            <form >
-                <div className="sort-pagination-group">
+
+            <div className="sort-pagination-group">
+                <form >
                     <label className="sort-pagination-group-select" htmlFor="score">Ordenar por </label>
                     <select onChange={(e) => changeSort(e.target.value)}>
                         <option value="count,desc">Votos</option>
                         <option value="score,desc">Avaliações</option>
                         <option value="title">Título</option>
                     </select>
-                </div>
-            </form >
+                </form >
+            </div>
         </div>
 
     );

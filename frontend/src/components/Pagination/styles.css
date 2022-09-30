@@ -56,12 +56,13 @@
 }
 .sort-pagination-group-select{
     padding: 0 5px 0 0;
+    
 }
 
 .sort-pagination-group{
 
     position: relative;
-    left: 205%;
+    left: 28%;
     justify-content: space-between;
     
    
