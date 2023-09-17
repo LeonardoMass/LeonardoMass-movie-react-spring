@@ -22,8 +22,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
 	private Environment env;
 
-	@Value("${cors.origins}")
-	private String corsOrigins;
+	//@Value("${cors.origins}")
+	//private String corsOrigins;
 	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 	CorsConfigurationSource corsConfigurationSource() {
 		CorsConfiguration configuration = new CorsConfiguration().applyPermitDefaultValues();
 		configuration.setAllowedMethods(Arrays.asList("POST", "GET", "PUT", "DELETE", "OPTIONS"));
-		configuration.setAllowedOrigins(Arrays.asList(corsOrigins));
+		//configuration.setAllowedOrigins(Arrays.asList(corsOrigins));
 		final UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
 		source.registerCorsConfiguration("/**", configuration);
 		return source;
